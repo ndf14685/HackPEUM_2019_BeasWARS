@@ -17,6 +17,7 @@ Router.map(function() {
     this.route('perfil');
     this.route('castings');
   });
+  this.route('cortometrajes');
 });
 
 export default Router;
