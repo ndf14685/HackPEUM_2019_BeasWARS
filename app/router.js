@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('director', function() {
     this.route('castings');
     this.route('sugerencias');
+    this.route('empezar');
   });
   this.route('espectador');
   this.route('actor', function() {
