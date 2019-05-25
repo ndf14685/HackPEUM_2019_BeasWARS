@@ -1,0 +1,25 @@
+<div class="jumbo">
+  <div class="right tomster"></div>
+  <h2>Actores Sugeridos</h2>
+  <p>
+      {{#each this.model as |actor|}}
+      <article>
+          <h3>{{actor.nombre}}</h3>
+        <p>
+            nombre:{{actor.nombre}}
+        </p>
+        <p>
+            aniosDeExperiencia: {{actor.aniosDeExperiencia}}
+        </p>
+        <p>
+            habilidad: {{actor.habilidad}}
+        </p>
+        <p>
+            Ver CV
+            Ver Videos en youtube            
+        </p>
+          
+      </article>
+      {{/each}}
+  </p>
+</div>
