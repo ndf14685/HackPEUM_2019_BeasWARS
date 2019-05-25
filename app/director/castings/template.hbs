@@ -1,25 +1,26 @@
 <div class="jumbo">
   <div class="right tomster"></div>
-  <h2>Casting de Actores</h2>
-  <p>
-      {{#each this.model as |actor|}}
-      <article>
-          <h3>{{actor.nombre}}</h3>
-        <p>
-            nombre:{{actor.nombre}}
-        </p>
-        <p>
-            aniosDeExperiencia: {{actor.aniosDeExperiencia}}
-        </p>
-        <p>
-            habilidad: {{actor.habilidad}}
-        </p>
-        <p>
-            Ver CV
-            Ver Videos en youtube            
-        </p>
-          
-      </article>
-      {{/each}}
-  </p>
+  <h2>Actores Sugeridos</h2>
+    {{#each this.model as |actor|}}
+        <div class="card mb-3" style="max-width: 540px;">
+        <div class="row no-gutters">
+            <div class="col-md-4">
+            <img src="..." class="card-img" alt="...">
+            </div>
+            <div class="col-md-8">
+            <div class="card-body">
+                <h5 class="card-title">{{actor.nombre}}</h5>
+                <p class="card-text">
+                    Su nombre es {{actor.nombre}}
+                    y tiene {{actor.aniosDeExperiencia}} años de experiencia
+                    considera que tiene como habilidades {{actor.habilidad}}
+                </p>
+                <p class="card-text"><small class="text-muted">
+                    Perfil actualizado hace 3 meses
+                </small></p>
+            </div>
+            </div>
+        </div>
+        </div>    
+    {{/each}}
 </div>

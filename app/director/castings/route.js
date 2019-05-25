@@ -1,11 +1,18 @@
 import Route from '@ember/routing/route';
-// import { inject as service } from '@ember/service';
 
 export default Route.extend({
-    /*
-    store: service(),
-    model() {
-        return this.get('store').findAll('castings');
+    model(){
+        return [
+            {
+                nombre: 'david',
+                habilidad: 'drama',
+                aniosDeExperiencia: 10,                
+            },
+            {
+                nombre: 'manu',
+                habilidad: 'terror',
+                aniosDeExperiencia: 10,
+            }
+    ]
     }
-    */
 });
